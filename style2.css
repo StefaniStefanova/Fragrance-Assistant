@@ -1,0 +1,173 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: radial-gradient(circle, #fef8f0, #f5e9dd);
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .main-header {
+    background-color: #fffaf5;
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5b3a29;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .logo-icon {
+    width: 60px;
+    height: auto;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #5b3a29;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .main-nav a:hover {
+    color: #b26e4a;
+    transform: scale(1.1);
+  }
+
+  .site-footer {
+    background-color: #f8f8f8;
+    color: #555;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }
+  
+  main {
+    margin-top: 30px;
+  }
+
+  .note-options button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+
+  .note-options button.selected {
+    background-color: #a06565;
+    color: white;
+  }
+
+  .note-category {
+    margin-bottom: 20px;
+  }
+
+  .layer {
+    transition: height 0.5s;
+  }
+
+
+  #create-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f4848;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .bubble {
+    fill: white;
+    opacity: 0.6;
+    animation: float-up 4s ease-in-out infinite;
+  }
+  
+  .bubble:nth-child(1) { animation-delay: 0s; }
+  .bubble:nth-child(2) { animation-delay: 0.5s; }
+  .bubble:nth-child(3) { animation-delay: 1s; }
+  .bubble:nth-child(4) { animation-delay: 1.5s; }
+  .bubble:nth-child(5) { animation-delay: 2s; }
+  .bubble:nth-child(6) { animation-delay: 2.5s; }
+  
+  @keyframes float-up {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-10px); opacity: 0.8; }
+    100% { transform: translateY(-20px); opacity: 0.1; }
+  }
+  
+  .layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .left-panel {
+    flex: 1.3; /* по-широка от дясната */
+    text-align: center;
+  }
+  
+  .right-panel {
+    flex: 0.7; /* по-тясна */
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #note-selection {
+    margin-bottom: 20px;
+    background: #fff8f2;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 16px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  
+  #perfume-svg {
+    width: 180px;
+  }
+  
+  .scent-description {
+    font-style: italic;
+    color: #6b4b3e;
+    margin-top: 10px;
+  }
+  
+  

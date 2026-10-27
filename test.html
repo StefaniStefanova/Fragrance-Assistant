@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест за Парфюм</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="text-center">
+    <header class="main-header">
+      <div class="container nav-container">
+        <h1 class="logo">
+            <a href="index.html"><img src="images/droplet-icon.png" alt="Perfume-icon" class="logo-icon">Fragrance Assistant</a>
+        </h1>
+
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="test.html">Започни отново</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div id="quiz-container">
+      <div class="quiz-step" id="step-1">
+        <h2>Какъв аромат търсите?</h2>
+        <div class="options">
+          <button class="option-btn" data-gender="female">Дамски</button>
+          <button class="option-btn" data-gender="male">Мъжки</button>
+        </div>
+      </div>
+
+      
+      <div class="quiz-step" id="step-2" style="display: none;">
+        <h2>Кога планирате най-често да носите парфюма?</h2>
+        <div class="options">
+          <button class="option-btn" data-occasion="daily">Всеки ден (офис, училище, университет)</button>
+          <button class="option-btn" data-occasion="special">Специални поводи (вечери, събития)</button>
+        </div>
+      </div>
+      
+      <div class="quiz-step" id="step-3" style="display: none;">
+        <h2>Колко силен искате да бъде ароматът?</h2>
+        <div class="options">
+          <button class="option-btn" data-intensity="light">Нежен и дискретен</button>
+          <button class="option-btn" data-intensity="medium">Средно забележим</button>
+          <button class="option-btn" data-intensity="strong">Интензивен и оставящ следа</button>
+        </div>
+      </div>
+      
+      <div class="quiz-step" id="step-4" style="display: none;">
+        <h2>Какви аромати ви привличат най-много?</h2>
+        <div class="options">
+          <button class="option-btn" data-scent="floral">Флорални</button>
+          <button class="option-btn" data-scent="fruity">Плодови</button>
+          <button class="option-btn" data-scent="fresh">Цитрусови</button>
+          <button class="option-btn" data-scent="woody">Дървесни</button>
+          <button class="option-btn" data-scent="oriental">Подправки/Ориенталски</button>
+          <button class="option-btn" data-scent="sweet">Гурме/Сладки</button>
+
+        </div>
+      </div>
+      
+      <div class="quiz-step" id="step-5" style="display: none;">
+        <h2>Изберете нотки, които харесвате:</h2>
+        <div class="note-options">
+          <div class="note-option" data-note="rose">
+            <img src="images/rose.jpg" alt="Роза">
+            <span class="note-label">Роза</span>
+          </div>
+          <div class="note-option" data-note="coffee">
+            <img src="images/coffee.jpg" alt="Кафе">
+            <span class="note-label">Кафе</span>
+          </div>
+          <div class="note-option" data-note="lemon">
+            <img src="images/lemon.jpg" alt="Лимон">
+            <span class="note-label">Лимон</span>
+          </div>
+          <div class="note-option" data-note="coconut">
+            <img src="images/coconut.jpg" alt="Кокос">
+            <span class="note-label">Кокос</span>
+          </div>
+          <div class="note-option" data-note="apple">
+            <img src="images/apple.jpg" alt="Ябълка">
+            <span class="note-label">Ябълка</span>
+          </div>
+          <div class="note-option" data-note="lavender">
+            <img src="images/lavender.jpg" alt="Лавандула">
+            <span class="note-label">Лавандула</span>
+          </div>
+          <div class="note-option" data-note="cherry">
+            <img src="images/cherry.jpg" alt="Череша">
+            <span class="note-label">Череша</span>
+          </div>
+          <div class="note-option" data-note="vanilla">
+            <img src="images/vanilla.jpg" alt="Ванилия">
+            <span class="note-label">Ванилия</span>
+          </div>
+          <div class="note-option" data-note="cinnamon">
+            <img src="images/cinnamon.jpg" alt="Канела">
+            <span class="note-label">Канела</span>
+          </div>
+          <div class="note-option" data-note="orange">
+            <img src="images/orange.jpg" alt="Портокал">
+            <span class="note-label">Портокал</span>
+          </div>
+          <div class="note-option" data-note="honey">
+            <img src="images/honey.jpg" alt="Мед">
+            <span class="note-label">Мед</span>
+          </div>
+          <div class="note-option" data-note="magnolia">
+            <img src="images/magnolia.jpg" alt="Магнолия">
+            <span class="note-label">Магнолия</span>
+          </div>
+          <div class="note-option" data-note="cedar">
+            <img src="images/cedar.jpg" alt="Кедър">
+            <span class="note-label">Кедър</span>
+          </div>
+          <div class="note-option" data-note="cocoa">
+            <img src="images/cocoa.jpg" alt="Какао">
+            <span class="note-label">Какао</span>
+          </div>
+          <div class="note-option" data-note="lime">
+            <img src="images/lime.jpg" alt="Лайм">
+            <span class="note-label">Лайм</span>
+          </div>
+          <div class="note-option" data-note="grapefruit">
+            <img src="images/grapefruit.jpg" alt="Грейпфрут">
+            <span class="note-label">Грейпфрут</span>
+          </div>
+          <div class="note-option" data-note="freesia">
+            <img src="images/freesia.jpg" alt="Фрезия">
+            <span class="note-label">Фрезия</span>
+          </div>
+          <div class="note-option" data-note="peach">
+            <img src="images/peach.jpg" alt="Праскова">
+            <span class="note-label">Праскова</span>
+          </div>
+          <div class="note-option" data-note="black-pepper">
+            <img src="images/black-pepper.jpg" alt="Черен пипер">
+            <span class="note-label">Черен пипер</span>
+          </div>
+          <div class="note-option" data-note="ginger">
+            <img src="images/ginger.jpg" alt="Джинджифил">
+            <span class="note-label">Джинджифил</span>
+          </div>
+          <div class="note-option" data-note="menta">
+            <img src="images/menta.jpg" alt="Мента">
+            <span class="note-label">Мента</span>
+          </div>
+          <div class="note-option" data-note="sandal-wood">
+            <img src="images/sandal-wood.png" alt="Сандалово дърво">
+            <span class="note-label">Сандалово дърво</span>
+          </div>
+          <div class="note-option" data-note="amberwood">
+            <img src="images/amberwood.jpg" alt="Кехлибар">
+            <span class="note-label">Кехлибар</span>
+          </div>
+          <div class="note-option" data-note="chocolate">
+            <img src="images/chocolate.jpg" alt="Шоколад">
+            <span class="note-label">Шоколад</span>
+          </div>
+          <div class="note-option" data-note="almond">
+            <img src="images/almond.jpg" alt="Бадем">
+            <span class="note-label">Бадем</span>
+          </div>
+          <div class="note-option" data-note="lilac">
+            <img src="images/lilac.jpg" alt="Люляк">
+            <span class="note-label">Люляк</span>
+          </div>
+          <div class="note-option" data-note="bergamot">
+            <img src="images/bergamot.jpg" alt="Бергамот">
+            <span class="note-label">Бергамот</span>
+          </div>
+          <div class="note-option" data-note="caramel">
+            <img src="images/caramel.jpg" alt="Карамел">
+            <span class="note-label">Карамел</span>
+          </div>
+          <div class="note-option" data-note="strawberry">
+            <img src="images/strawberry.jpg" alt="Ягода">
+            <span class="note-label">Ягода</span>
+          </div>
+          <div class="note-option" data-note="pear">
+            <img src="images/pear.jpg" alt="Круша">
+            <span class="note-label">Круша</span>
+          </div>
+          <div class="note-option" data-note="raspberry">
+            <img src="images/raspberry.jpg" alt="Малина">
+            <span class="note-label">Малина</span>
+          </div>
+          <div class="note-option" data-note="pineapple">
+            <img src="images/pineapple.jpg" alt="Ананас">
+            <span class="note-label">Ананас</span>
+          </div>
+          <div class="note-option" data-note="kiwi">
+            <img src="images/kiwi.jpg" alt="Киви">
+            <span class="note-label">Киви</span>
+          </div>
+          <div class="note-option" data-note="jasmine">
+            <img src="images/jasmine.jpg" alt="Жасмин">
+            <span class="note-label">Жасмин</span>
+          </div>
+          <div class="note-option" data-note="orchid">
+            <img src="images/orchid.jpg" alt="Орхидея">
+            <span class="note-label">Орхидея</span>
+          </div>
+          <div class="note-option" data-note="gardenia">
+            <img src="images/gardenia.jpg" alt="Гардения">
+            <span class="note-label">Гардения</span>
+          </div>
+          <div class="note-option" data-note="mandarin">
+            <img src="images/mandarin.jpg" alt="Мандарина">
+            <span class="note-label">Мандарина</span>
+          </div>
+          <div class="note-option" data-note="lily">
+            <img src="images/lily.jpg" alt="Лилия">
+            <span class="note-label">Лилия</span>
+          </div>
+          <div class="note-option" data-note="violet">
+            <img src="images/violet.jpg" alt="Виолетка">
+            <span class="note-label">Виолетка</span>
+          </div>
+          <div class="note-option" data-note="berry">
+            <img src="images/berry.jpg" alt="Боровинка">
+            <span class="note-label">Боровинка</span>
+          </div>
+          <div class="note-option" data-note="plum">
+            <img src="images/plum.jpg" alt="Слива">
+            <span class="note-label">Слива</span>
+          </div>
+          <div class="note-option" data-note="blackberry">
+            <img src="images/blackberry.jpg" alt="Къпина">
+            <span class="note-label">Къпина</span>
+          </div>
+          <div class="note-option" data-note="mango">
+            <img src="images/mango.jpg" alt="Манго">
+            <span class="note-label">Манго</span>
+          </div>
+          <div class="note-option" data-note="vetiver">
+            <img src="images/vetiver.jpg" alt="Ветивер">
+            <span class="note-label">Ветивер</span>
+          </div>
+          <div class="note-option" data-note="star-anise">
+            <img src="images/star-anise.jpg" alt="Анасон">
+            <span class="note-label">Анасон</span>
+          </div>
+          <div class="note-option" data-note="cardamom">
+            <img src="images/cardamom.jpg" alt="Кардамон">
+            <span class="note-label">Кардамон</span>
+          </div>
+          <div class="note-option" data-note="nutmeg">
+            <img src="images/nutmeg.jpg" alt="Индийско орехче">
+            <span class="note-label">Индийско орехче</span>
+          </div>
+          <div class="note-option" data-note="incense">
+            <img src="images/incense.jpg" alt="Тамян">
+            <span class="note-label">Тамян</span>
+          </div>
+          <div class="note-option" data-note="saffron">
+            <img src="images/saffron.jpg" alt="Шафран">
+            <span class="note-label">Шафран</span>
+          </div>
+          <div class="note-option" data-note="pink-pepper">
+            <img src="images/pink-pepper.jpg" alt="Розов пипер">
+            <span class="note-label">Розов пипер</span>
+          </div>
+          <div class="note-option" data-note="cloves">
+            <img src="images/cloves.jpg" alt="Карамфил">
+            <span class="note-label">Карамфил</span>
+          </div>
+          <div class="note-option" data-note="cumin">
+            <img src="images/cumin.jpg" alt="Кимион">
+            <span class="note-label">Кимион</span>
+          </div>
+          <div class="note-option" data-note="cotton-candy">
+            <img src="images/cotton-candy.jpg" alt="Захарен памук">
+            <span class="note-label">Захарен памук</span>
+          </div>
+          <div class="note-option" data-note="bubble-gum">
+            <img src="images/bubble-gum.jpg" alt="Дъвка">
+            <span class="note-label">Дъвка</span>
+          </div>
+          <div class="note-option" data-note="white-chocolate">
+            <img src="images/white-chocolate.jpg" alt="Бял шоколад">
+            <span class="note-label">Бял шоколад</span>
+          </div>
+          <div class="note-option" data-note="milk">
+            <img src="images/milk.jpg" alt="Мляко">
+            <span class="note-label">Мляко</span>
+          </div>
+          <div class="note-option" data-note="marshmallow">
+            <img src="images/marshmallow.jpg" alt="Маршмелоу">
+            <span class="note-label">Маршмелоу</span>
+          </div>
+          <div class="note-option" data-note="green-tea">
+            <img src="images/green-tea.jpg" alt="Зелен чай">
+            <span class="note-label">Зелен чай</span>
+          </div>
+          
+          <!-- Повторете за всички нотки -->
+        </div>
+        
+      
+        <div style="margin-top: 20px;">
+          <button id="finish-btn" class="btn btn-dark">Готово</button>
+        </div>
+      </div>
+      
+      <div id="result" style="display: none; margin-top: 40px;"></div>
+
+      <pre id="debug-output" style="background:#f0f0f0; border:1px solid #ccc; padding:10px; margin-top:20px; font-size:14px;"></pre>
+
+    </div>
+    
+      
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 FragranceAssistant.<br>
+                Всички права запазени.
+        </p>
+        </div>
+    </footer>
+    
+    <script>
+      const answers = {}; // тук се съхраняват всички отговори
+      
+      const genderButtons = document.querySelectorAll('#step-1 .option-btn');
+      genderButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedGender = this.getAttribute('data-gender');
+          answers.gender = selectedGender;
+      
+          document.getElementById('step-1').style.display = 'none';
+          document.getElementById('step-2').style.display = 'block';
+        });
+      });
+      
+      const occasionButtons = document.querySelectorAll('#step-2 .option-btn');
+      occasionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedOccasion = this.getAttribute('data-occasion');
+          answers.occasion = selectedOccasion;
+      
+          document.getElementById('step-2').style.display = 'none';
+          document.getElementById('step-3').style.display = 'block';
+        });
+      });
+      
+      const intensityButtons = document.querySelectorAll('#step-3 .option-btn');
+      intensityButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedIntensity = this.getAttribute('data-intensity');
+          answers.intensity = selectedIntensity;
+      
+          document.getElementById('step-3').style.display = 'none';
+          document.getElementById('step-4').style.display = 'block';
+        });
+      });
+      
+      const scentButtons = document.querySelectorAll('#step-4 .option-btn');
+      scentButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const selectedScent = this.getAttribute('data-scent');
+          answers.scent = selectedScent;
+      
+          document.getElementById('step-4').style.display = 'none';
+      
+          filterNotesByScent(selectedScent); // ВАЖНО: Филтрираме нотките
+      
+          document.getElementById('step-5').style.display = 'block';
+        });
+      });
+      
+      
+      // --- КАРТИРАНЕ НА НОТКИ СПОРЕД ВИД АРОМАТ ---
+      
+      const scentToNotes = {
+    floral: ['rose', 'lavender', 'freesia', 'lilac', 'magnolia', 'jasmine', 'orchid', 'gardenia', 'lily', 'violet'],
+    fruity: ['peach', 'cherry', 'apple', 'strawberry', 'pear', 'raspberry', 'pineapple', 'kiwi', 'berry', 'plum', 'blackberry', 'mango'],
+    fresh: ['lemon', 'orange', 'grapefruit', 'lime', 'menta', 'bergamot', 'mandarin', 'green-tea'],
+    woody: ['cedar', 'sandal-wood', 'amberwood', 'vetiver'],
+    oriental: ['coffee', 'black-pepper', 'ginger', 'cinnamon', 'star-anise', 'nutmeg', 'cardamom', 'incense', 'saffron', 'pink-pepper', 'cloves', 'cumin'],
+    sweet: ['vanilla', 'cocoa', 'honey', 'coconut', 'caramel', 'almond', 'chocolate', 'cotton-candy', 'bubble-gum', 'white-chocolate','milk', 'marshmallow']
+};
+
+      
+      
+      // --- ФУНКЦИЯ ЗА ФИЛТРИРАНЕ НА НОТКИТЕ ---
+      function filterNotesByScent(selectedScent) {
+        const allowedNotes = scentToNotes[selectedScent] || [];
+        const allNoteOptions = document.querySelectorAll('#step-5 .note-option');
+      
+        allNoteOptions.forEach(option => {
+          const note = option.getAttribute('data-note');
+          
+          if (allowedNotes.includes(note)) {
+            option.style.display = 'inline-block'; // Показваме
+          } else {
+            option.style.display = 'none'; // Скриваме
+          }
+        });
+      }
+      
+      
+      // --- ИЗБОР НА НОТКИ ---
+      const noteOptions = document.querySelectorAll('#step-5 .note-option');
+      const selectedNotes = [];
+      
+      noteOptions.forEach(option => {
+        option.addEventListener('click', function() {
+          const note = this.getAttribute('data-note');
+          if (selectedNotes.includes(note)) {
+            const index = selectedNotes.indexOf(note);
+            selectedNotes.splice(index, 1);
+            this.classList.remove('selected');
+          } else {
+            selectedNotes.push(note);
+            this.classList.add('selected');
+          }
+        });
+      });
+      
+
+      // --- ФИНАЛЕН БУТОН ---
+      const finishBtn = document.getElementById('finish-btn');
+      finishBtn.addEventListener('click', function() {
+        answers.notes = selectedNotes;
+      
+        console.log('Финални отговори:', answers);
+        // Може да пренасочим или покажем резултат тук
+      
+
+  document.getElementById('step-5').style.display = 'none';
+
+  const resultDiv = document.getElementById('result');
+  resultDiv.style.display = 'block';
+  resultDiv.innerHTML = '<p>⏳ Момент... търсим най-подходящия парфюм за теб!</p>';
+
+  const finalAnswers = answers; // 👈 Използваме събраните отговори
+
+  const debugDiv = document.getElementById('debug-output');
+
+fetch('get_recommendation.php', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(finalAnswers)
+})
+.then(res => res.json())
+.then(data => {
+    // Покажи какво изпращаме и какво връща сървърът
+    debugDiv.innerText = 
+      '📤 Изпратени данни:\n' + JSON.stringify(finalAnswers, null, 2) + 
+      '\n\n📥 Отговор от сървъра:\n' + JSON.stringify(data, null, 2);
+
+    if (data.success && data.perfume) {
+        resultDiv.innerHTML = `
+            <div class="perfume-result">
+                <h3>Намерихме перфектния парфюм за вас!</h3>
+               <img src="${data.perfume.image_url}" alt="${data.perfume.name}" class="perfume-img">
+                <h4>${data.perfume.name}</h4>
+                <p>${data.perfume.description}</p>
+                ${data.perfume.matched_notes ? 
+                    `<p><strong>Съвпадащи нотки:</strong> ${data.perfume.matched_notes.join(', ')}</p>` 
+                    : ''}
+            </div>
+        `;
+    } else {
+        resultDiv.innerHTML = `
+            <div class="no-result">
+                <h3>Не намерихме точни съвпадения</h3>
+                <p>Опитайте с други критерии или <a href="test.html">започнете отново</a></p>
+            </div>
+        `;
+    }
+})
+.catch(err => {
+  debugDiv.innerText = '❌ Грешка при заявката:\n' + err;
+});
+
+});
+document.getElementById('debug-output').style.display = 'none';
+
+      </script>
+      
+    
+
+</body>
+</html>

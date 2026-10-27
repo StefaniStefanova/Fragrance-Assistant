@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Assistant</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <header class="main-header artistic-header">
+        <div class="container nav-container">
+            <h1 class="logo">
+                <img src="images/droplet-icon.png" alt="Perfume-icon" class="logo-icon">Fragrance Assistant
+            </h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#fragrance-section">Видове нотки</a></li>
+                    <li><a href="#test-notes">Тествай нотките</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="your-parfume.html">Създай свой аромат</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Фонова секция -->
+    <div class="hero-section d-flex align-items-center justify-content-center">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bold">Открий Перфектния Парфюм</h1>
+            <p class="lead">Ще ти помогнем да намериш аромат, който подхожда на твоя стил.</p>
+            <a href="test.html" class="btn btn-light btn-lg mt-3 shadow-lg">Започни теста</a>
+        </div>
+    </div>
+
+    <!-- Секция за ароматните нотки -->
+<section class="fragrance-section" id="fragrance-section">
+    <div class="container">
+        <h2 class="section-title">Открийте света на ароматите</h2>
+        <p class="section-subtitle">Ароматите са съставени от три основни слоя: връхни, средни и базови нотки.</p>
+
+        <div class="row">
+            <!-- Карта 1 - Връхни нотки -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/top-notes.jpg" class="card-img-top" alt="Връхни нотки">
+                    <div class="card-body">
+                        <h5 class="card-title">Връхни нотки</h5>
+                        <p class="card-text">Свежи и цитрусови аромати, които усещаме първи.</p>
+                        <a href="#top-notes" class="btn btn-primary">Прочети повече</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карта 2 - Средни нотки -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/heart-notes.jpg" class="card-img-top" alt="Средни нотки">
+                    <div class="card-body">
+                        <h5 class="card-title">Средни нотки</h5>
+                        <p class="card-text">Флорални и плодови акорди, които оформят сърцевината.</p>
+                        <a href="#heart-notes" class="btn btn-primary">Прочети повече</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карта 3 - Базови нотки -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/base-notes.jpg" class="card-img-top" alt="Базови нотки">
+                    <div class="card-body">
+                        <h5 class="card-title">Базови нотки</h5>
+                        <p class="card-text">Топли и дълготрайни ухания като ванилия и дървесни акорди.</p>
+                        <a href="#base-notes" class="btn btn-primary">Прочети повече</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------------------------------------------------->
+
+<section id="test-notes" class="test-notes-section">
+    <div class="container">
+        <h2 class="section-title">Тествай нотките</h2>
+        <p class="section-subtitle">Задръж мишката върху даден аромат, за да научиш повече за него<br>
+        Натисни мишката върху даден аромат, за да откриеш парфюми с него</p>
+
+        <div class="notes-grid">
+            <div class="note-item">
+                <img src="images/lemon.jpg" alt="Лимон" class="note-img" >
+                <div class="note-info">Свеж, искрящ и ободряващ аромат</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/rose.jpg" alt="Роза" class="note-img">
+                <div class="note-info">Романтичен и чувствен флорален акорд</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/vanilla.jpg" alt="Ванилия" class="note-img">
+                <div class="note-info">Топъл, сладък и уютен аромат</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/cherry.jpg" alt="Череша" class="note-img">
+                <div class="note-info">Сочен и сладък плодов аромат с леко тръпчива нотка</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/peach.jpg" alt="Праскова" class="note-img">
+                <div class="note-info">Кадифено мек и сладък аромат с деликатен, сочен и слънчев нюанс.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/cinnamon.jpg" alt="Канела" class="note-img">
+                <div class="note-info">Топъл, пикантен и уютен аромат с леко сладникави и дървесни нюанси.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/lilac.jpg" alt="Люляк" class="note-img">
+                <div class="note-info">Нежен, леко пудрен и романтичен аромат, символизиращ пролетна свежест.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/coffee.jpg" alt="Кафе" class="note-img">
+                <div class="note-info">Дълбок, интензивен и ободряващ аромат с топли, леко горчиви и карамелени нюанси.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/menta.jpg" alt="Мента" class="note-img">
+                <div class="note-info">Хладен, освежаващ и енергизиращ аромат с чисти, зелени и леко пикантни нюанси.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/magnolia.jpg" alt="Магнолия" class="note-img">
+                <div class="note-info">Изискан и кремообразен флорален аромат с цитрусови и свежи, леко восъчни оттенъци.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/star-anise.jpg" alt="Анасон" class="note-img">
+                <div class="note-info">Изискан и загадъчен аромат с топли, сладникави и леко пикантни нюанси</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/lime.jpg" alt="Лайм" class="note-img">
+                <div class="note-info"> Свеж и искрящ цитрусов аромат с леко кисели и зелени нотки</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/lemongrass.jpg" alt="Лимонова трева" class="note-img">
+                <div class="note-info">Интензивно свеж, леко тревист и цитрусов аромат с ободряващ ефект.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/grapefruit.jpg" alt="Грейпфрут" class="note-img">
+                <div class="note-info">Жив и освежаващ аромат с комбинация от горчиви, сладки и тръпчиви нюанси.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/black-pepper.jpg" alt="Черен пипер" class="note-img">
+                <div class="note-info">Пикантен, топъл и леко дървесен аромат с изразен огнен характер.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/orange.jpg" alt="Портокал" class="note-img">
+                <div class="note-info">Сочна сладост и лека цитрусова горчивина, изпълнен с енергия и свежест.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/lavender.jpg" alt="Лавандула" class="note-img">
+                <div class="note-info">Спокоен и успокояващ билков аромат с флорални и леко дървесни нюанси</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/apple.jpg" alt="Ябълка" class="note-img">
+                <div class="note-info">Сладък, сочен и леко кисел аромат, изпълнен с плодова свежест.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/ginger.jpg" alt="Джинджифил" class="note-img">
+                <div class="note-info">Пикантен, топъл и леко лимонов аромат с освежаваща и стимулираща нотка.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/coconut.jpg" alt="Кокос" class="note-img">
+                <div class="note-info">Кремообразен, сладък и екзотичен аромат, напомнящ за тропически плажове</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/freesia.jpg" alt="Фрезия" class="note-img">
+                <div class="note-info">Сладък, сочен и леко кисел аромат, изпълнен с плодова свежест, с усещане за елегантност</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/cocoa.jpg" alt="Какао" class="note-img">
+                <div class="note-info">Дълбок и богат аромат с топли, леко горчиви шоколадови нюанси</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/honey.jpg" alt="Мед" class="note-img">
+                <div class="note-info">Сладък, златист и топъл аромат с леко флорални и гурме нюанси.</div>
+            </div>
+
+            <div class="note-item">
+                <img src="images/cedrus.png" alt="Кедър" class="note-img">
+                <div class="note-info">Топъл, дървесен и леко сух аромат, s усещане за стабилност и елегантност.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------->
+
+
+<!-- Връхни нотки -->
+<section id="top-notes" class="notes-section top-notes-bg">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-lemon"></i> Връхни нотки</h2>
+        <p class="section-subtitle">Първото впечатление от аромата</p>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img src="images/top-notes-detail.jpg" alt="Цитрусови аромати" class="notes-img fade-in">
+            </div>
+            <div class="col-md-7">
+                <p class="notes-text">
+                    Връхните нотки са първото усещане при нанасяне на парфюма. Те обикновено съдържат свежи и леки аромати като цитрусови плодове (бергамот, лимон, грейпфрут), зелени нотки или дори пикантни акорди.
+                </p>
+                <p class="notes-text">
+                    Поради бързото им изпаряване, за тях се предпочита да са достатъчно оразличителни и правещи впечатление, за да изградят цялостното усещане за парфюма още в самото му начало.
+                    За избор на връхни нотки често включваме свежи или горчиви аромати. В последствие, те балансирано се преплитат със средните нотки, докато накрая не се изгубят в силата на техния аромат.
+                </p><br>
+                <ul class="notes-list">
+                    <li><strong>💨 Трайност:</strong> 10-15 минути</li>
+                    <li><strong>🌿 Аромати:</strong> Бергамот, лимон, грейпфрут</li>
+                    <li><strong>🎯 Основна роля:</strong> Свежест, първо впечатление</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Средни нотки -->
+<section id="heart-notes" class="notes-section heart-notes-bg">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-flower"></i> Средни нотки</h2>
+        <p class="section-subtitle">Сърцевината на аромата</p>
+
+        <div class="row">
+            <div class="col-md-7">
+                <p class="notes-text">
+                    Средните нотки са сърцевината на парфюма. Те започват да се усещат след като връхните нотки изчезнат. Именно те са съставките, които рамкират цялостната му концепция.
+                    Съставляват около 70% от съдържанието на аромата и са далеч по-дълготрайни.
+                <p class="notes-text">
+                    Често съдържат флорални, плодови или пикантни аромати като роза, жасмин, праскова и канела. Те свързват връхните и базовите нотки, изграждайки балансиран ароматен профил.
+                    В състава им влизат също ароматни масла, тъй като са по-плътни и се характеризират с по-силен и устойчив аромат.
+                </p><br>
+                <ul class="notes-list">
+                    <li><strong>💨 Трайност:</strong> 2-3 часа</li>
+                    <li><strong>🌸 Аромати:</strong> Роза, жасмин, праскова, канела</li>
+                    <li><strong>🎯 Основна роля:</strong> Създаване на балансиран аромат</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src="images/heart-notes-detail.jpg" alt="Флорални аромати" class="notes-img fade-in">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Базови нотки -->
+<section id="base-notes" class="notes-section base-notes-bg">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-tree"></i> Базови нотки</h2>
+        <p class="section-subtitle">Дълготрайното ухание</p>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img src="images/base-notes-detail.jpg" alt="Дървесни и топли аромати" class="notes-img fade-in">
+            </div>
+            <div class="col-md-7">
+                <p class="notes-text">
+                    Базовите нотки са основата на парфюма. Те се развиват след няколко часа и могат да останат на кожата дори цял ден. Характерното при базовите нотки е, 
+                    че тяхната роля е да придадат дълбочина и сила на аромата. Представете си ги като една стабилна основа, върху която поетапно се надграждат останалите благоуханни пластове.
+                </p>
+                <p class="notes-text">
+                    Те умело се смесват със средните и, за определен период от време, действат в синхрон, за да създадат едно наистина божествено усещане. Базовите нотки проникват в кожата - 
+                    ето защо ароматът им се долавя дълго след изпаряването на сърцевината на парфюма. Често съдържат дървесни, мускусни и ориенталски аромати като ванилия, сандалово дърво, 
+                    кехлибар и пачули. Те придават дълбочина и характер на аромата.                
+                </p><br>
+                <ul class="notes-list">
+                    <li><strong>💨 Трайност:</strong> 6+ часа</li>
+                    <li><strong>🌿 Аромати:</strong> Ванилия, сандалово дърво, кехлибар</li>
+                    <li><strong>🎯 Основна роля:</strong> Дълготрайност и дълбочина</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!------------------------------------------------------------------------------->
+<!-- Модален прозорец -->
+
+<div id="noteModal" class="modal fade" tabindex="-1" aria-hidden="true" >
+ 
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Натисни мишката върху дадения парфюм, за да научиш повече</h6>
+                <div id="recommendedPerfumes" class="d-flex gap-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.querySelectorAll('.note-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const noteName = this.querySelector('img').alt;
+        
+        // Данни за парфюмите - ДВЕ СНИМКИ ЗА ВСЕКИ ПРОДУКТ
+        const perfumes = {
+            "Лимон": [
+                {
+                    name: "Cool Water Parfum Davidoff for men",
+                    frontImage: "images/perfume1.png", // Основна снимка
+                    backImage: "images/notes1.png" // Снимка на гърба
+                },
+                {
+                    name: "Acqua di Gioia Giorgio Armani for women",
+                    frontImage: "images/perfume2.png",
+                    backImage: "images/notes2.png"
+                }
+            ],
+
+            "Роза": [
+                {
+                    name: "Oud Silk Mood Maison Francis Kurkdjian for women and men",
+                    frontImage: "images/perfume4.png", // Основна снимка
+                    backImage: "images/notes4.png", // Снимка на гърба
+                },
+                {
+                    name: "Idôle Now Lancôme for women",
+                    frontImage: "images/perfume3.png",
+                    backImage: "images/notes3.png"
+                }
+            ],
+
+            "Ванилия": [
+                {
+                    name: "Eau d'Ombré Leather Tom Ford for men",
+                    frontImage: "images/perfume5.png", // Основна снимка
+                    backImage: "images/notes5.png", // Снимка на гърба
+                },
+                {
+                    name: "La Nuit Trésor Nude Lancôme for women",
+                    frontImage: "images/perfume6.png",
+                    backImage: "images/notes6.png"
+                }
+            ],
+
+            "Череша": [
+                {
+                    name: "L’Homme Idéal Eau de Parfum Guerlain for men",
+                    frontImage: "images/perfume7.png", // Основна снимка
+                    backImage: "images/notes7.png", // Снимка на гърба
+                },
+                {
+                    name: "Cherry Blush Les Soeurs de Noe for women",
+                    frontImage: "images/perfume8.png",
+                    backImage: "images/notes8.png"
+                }
+            ],
+
+            "Праскова": [
+                {
+                    name: "Pêche Mirage Guerlain for women and men",
+                    frontImage: "images/perfume9.png", // Основна снимка
+                    backImage: "images/notes9.png", // Снимка на гърба
+                },
+                {
+                    name: "Boss The Scent For Her Hugo Boss for women",
+                    frontImage: "images/perfume10.png",
+                    backImage: "images/notes10.png"
+                }
+            ],
+
+            "Канела": [
+                {
+                    name: "Spicebomb Infrared Eau de Parfum Viktor&Rolf for men",
+                    frontImage: "images/perfume11.png", // Основна снимка
+                    backImage: "images/notes11.png", // Снимка на гърба
+                },
+                {
+                    name: "Nightfall Patchouli Carolina Herrera for women and men",
+                    frontImage: "images/perfume12.png",
+                    backImage: "images/notes12.png"
+                }
+            ],
+
+            "Люляк": [
+                {
+                    name: "Muguet Millésime Guerlain for women and men",
+                    frontImage: "images/perfume14.png", // Основна снимка
+                    backImage: "images/notes14.png", // Снимка на гърба
+                },
+                {
+                    name: "Cherry Blossom Millésime Guerlain for women",
+                    frontImage: "images/perfume13.png",
+                    backImage: "images/notes13.png"
+                }
+            ],
+
+            "Кафе": [
+                {
+                    name: "Valentino Uomo Born in Roma Green Stravaganza Valentino for men",
+                    frontImage: "images/perfume15.png", // Основна снимка
+                    backImage: "images/notes15.png", // Снимка на гърба
+                },
+                {
+                    name: "Black Opium Extreme Yves Saint Laurent for women",
+                    frontImage: "images/perfume16.png",
+                    backImage: "images/notes16.png"
+                }
+            ],
+
+            "Мента": [
+                {
+                    name: "Azzaro Pour Homme Wild Mint Azzaro for men",
+                    frontImage: "images/perfume17.png", // Основна снимка
+                    backImage: "images/notes17.png", // Снимка на гърба
+                },
+                {
+                    name: "Aqua Allegoria Herba Fresca Guerlain for women and men",
+                    frontImage: "images/perfume18.png",
+                    backImage: "images/notes18.png"
+                }
+            ],
+
+            "Магнолия": [
+                {
+                    name: "Allende Xerjoff for women and men",
+                    frontImage: "images/perfume19.png", // Основна снимка
+                    backImage: "images/notes19.png", // Снимка на гърба
+                },
+                {
+                    name: "BVénus Nina Ricci for women",
+                    frontImage: "images/perfume20.png",
+                    backImage: "images/notes20.png"
+                }
+            ],
+
+            "Анасон": [
+                {
+                    name: "Opium Pour Homme Eau de Parfum Yves Saint Laurent for men",
+                    frontImage: "images/perfume21.png", // Основна снимка
+                    backImage: "images/notes21.png", // Снимка на гърба
+                },
+                {
+                    name: "Loverdose Diesel for women",
+                    frontImage: "images/perfume22.png",
+                    backImage: "images/notes22.png"
+                }
+            ],
+
+            "Лайм": [
+                {
+                    name: "Wanted Tonic Azzaro for men",
+                    frontImage: "images/perfume23.png", // Основна снимка
+                    backImage: "images/notes23.png", // Снимка на гърба
+                },
+                {
+                    name: "Batucada L'Artisan Parfumeur for women and men",
+                    frontImage: "images/perfume24.png",
+                    backImage: "images/notes24.png"
+                }
+            ],
+
+            "Лимонова трева": [
+                {
+                    name: "Opalon Bvlgari for men",
+                    frontImage: "images/perfume25.png", // Основна снимка
+                    backImage: "images/notes25.png", // Снимка на гърба
+                },
+                {
+                    name: "Vieri Mind Games for women and men",
+                    frontImage: "images/perfume26.png",
+                    backImage: "images/notes26.png"
+                }
+            ],
+
+            "Грейпфрут": [
+                {
+                    name: "Light Blue Forever pour Homme Dolce&Gabbana for men",
+                    frontImage: "images/perfume27.png", // Основна снимка
+                    backImage: "images/notes27.png", // Снимка на гърба
+                },
+                {
+                    name: "Al Qiam Silver Lattafa Perfumes for women and men",
+                    frontImage: "images/perfume28.png",
+                    backImage: "images/notes28.png"
+                }
+            ],
+
+            "Черен пипер": [
+                {
+                    name: "F by Ferragamo Black Salvatore Ferragamo for men",
+                    frontImage: "images/perfume29.png", // Основна снимка
+                    backImage: "images/notes29.png", // Снимка на гърба
+                },
+                {
+                    name: "Galloway Parfums de Marly for women and men",
+                    frontImage: "images/perfume30.png",
+                    backImage: "images/notes30.png"
+                }
+            ],
+
+            "Портокал": [
+                {
+                    name: "Citrus Poetry Les Soeurs de Noe for women and men",
+                    frontImage: "images/perfume31.png", // Основна снимка
+                    backImage: "images/notes31.png", // Снимка на гърба
+                },
+                {
+                    name: "Coco Mademoiselle Hair Mist Chanel for women",
+                    frontImage: "images/perfume32.png",
+                    backImage: "images/notes32.png"
+                }
+            ],
+
+            "Лавандула": [
+                {
+                    name: "Boss The Scent Elixir For Him Hugo Boss for men",
+                    frontImage: "images/perfume33.png", // Основна снимка
+                    backImage: "images/notes33.png", // Снимка на гърба
+                },
+                {
+                    name: "Goddess Burberry for women",
+                    frontImage: "images/perfume34.png",
+                    backImage: "images/notes34.png"
+                }
+            ],
+
+            "Ябълка": [
+                {
+                    name: "Custom Alfred Dunhill for men",
+                    frontImage: "images/perfume35.png", // Основна снимка
+                    backImage: "images/notes35.png", // Снимка на гърба
+                },
+                {
+                    name: "Sweet Love Pimkie for women",
+                    frontImage: "images/perfume36.png",
+                    backImage: "images/notes36.png"
+                }
+            ],
+
+            "Джинджифил": [
+                {
+                    name: "Boss The Scent Absolute Hugo Boss for men",
+                    frontImage: "images/perfume37.png", // Основна снимка
+                    backImage: "images/notes37.png", // Снимка на гърба
+                },
+                {
+                    name: "Nightcap Orebella for women and men",
+                    frontImage: "images/perfume38.png",
+                    backImage: "images/notes38.png"
+                }
+            ],
+            
+            "Кокос": [
+                {
+                    name: "Le Beau Jean Paul Gaultier for men",
+                    frontImage: "images/perfume39.png", // Основна снимка
+                    backImage: "images/notes39.png", // Снимка на гърба
+                },
+                {
+                    name: "Born in Roma the Gold Donna Valentino for women",
+                    frontImage: "images/perfume40.png",
+                    backImage: "images/notes40.png"
+                }
+            ],
+
+            "Фрезия": [
+                {
+                    name: "Blooming Ballet Valmont for women and men",
+                    frontImage: "images/perfume41.png", // Основна снимка
+                    backImage: "images/notes41.png", // Снимка на гърба
+                },
+                {
+                    name: "Nomade Eau de Toilette Chloé for women",
+                    frontImage: "images/perfume42.png",
+                    backImage: "images/notes42.png"
+                }
+            ],
+
+            "Какао": [
+                {
+                    name: "Defy Parfum Calvin Klein for men",
+                    frontImage: "images/perfume43.png", // Основна снимка
+                    backImage: "images/notes43.png", // Снимка на гърба
+                },
+                {
+                    name: "La Nuit Trésor Le Parfum Lancôme for women",
+                    frontImage: "images/perfume44.png",
+                    backImage: "images/notes44.png"
+                }
+            ],
+
+            "Мед": [
+                {
+                    name: "Gold Knight By Kilian for men",
+                    frontImage: "images/perfume45.png", // Основна снимка
+                    backImage: "images/notes45.png", // Снимка на гърба
+                },
+                {
+                    name: "Scandal A Paris Jean Paul Gaultier for women",
+                    frontImage: "images/perfume46.png",
+                    backImage: "images/notes46.png"
+                }
+            ],
+
+            "Кедър": [
+                {
+                    name: "Hero Parfum Burberry for men",
+                    frontImage: "images/perfume47.png", // Основна снимка
+                    backImage: "images/notes47.png", // Снимка на гърба
+                },
+                {
+                    name: "Loubiluna Christian Louboutin for women and men",
+                    frontImage: "images/perfume48.png",
+                    backImage: "images/notes48.png"
+                }
+            ],
+        };
+
+        const container = document.getElementById('recommendedPerfumes');
+        container.innerHTML = "";
+
+        perfumes[noteName]?.forEach(perfume => {
+            const card = document.createElement('div');
+            card.className = 'perfume-card';
+            card.innerHTML = `
+                <div class="perfume-card-inner">
+                    <div class="perfume-card-front">
+                        <img src="${perfume.frontImage}" alt="${perfume.name}">
+                        <p>${perfume.name}</p>
+                    </div>
+                    <div class="perfume-card-back">
+                        <img src="${perfume.backImage}" alt="Нотки на Lisboa Colombo Zara for men">
+                    </div>
+                </div>
+            `;
+
+            card.addEventListener('click', (e) => {
+                e.stopPropagation();
+                card.classList.toggle('flipped');
+            });
+
+            container.appendChild(card);
+        });
+
+        document.getElementById('modalTitle').textContent = `Парфюми с нотка ${noteName}`;
+        new bootstrap.Modal(document.getElementById('noteModal')).show();
+    });
+});
+    </script>
+    
+    
+    <!-- Бутон за връщане нагоре -->
+    <button id="scrollTopBtn" class="btn btn-primary">
+        ^
+    </button>
+
+    <script>
+        // Показване/скриване на бутона при скрол
+        window.onscroll = function() {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.documentElement.scrollTop > 300) { // Показва бутона след 300px скрол
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    
+        // Скрол до горе при клик
+        document.getElementById("scrollTopBtn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+    
+
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    function checkPosition() {
+        fadeIns.forEach((element) => {
+            const position = element.getBoundingClientRect();
+            const screenHeight = window.innerHeight;
+
+            if (position.top < screenHeight * 0.85 && position.bottom > 0) {
+                element.classList.add("appear");
+            } else {
+                element.classList.remove("appear");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkPosition);
+    checkPosition(); // Проверка при зареждане
+});
+    </script>
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 FragranceAssistant.<br>
+            Всички права запазени.
+    </p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+</script>
+</body>
+</html>
